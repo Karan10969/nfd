@@ -1,0 +1,126 @@
+.about-container{
+    background-color: white;
+    height: 100vh;
+    width: 99vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.left-section{
+    height: 100%;
+    width: 30%;
+}
+
+.left-top-section{
+    height: 75%;
+    width: 100%;
+    overflow-y: scroll;
+   margin-bottom: 10%;
+}
+.left-top-section::-webkit-scrollbar{
+    display: none;
+}
+
+.problem-solution{
+    height: 100%;
+    padding-top: 15%;
+    padding-left: 3%;
+    text-align:left;
+    margin-bottom: 5%;
+}
+.problem-solution h1{
+    font-family: 'Space Mono', monospace;
+    font-size: 3em;
+}
+.problem-solution h3{
+    font-family: 'Space Mono', monospace;
+}
+.problem-solution p{
+    color: grey;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.left-bottom-section{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10%;
+    border-top: 1px solid grey;
+}
+.save-money{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px rgb(177, 176, 176);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+.right-section{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section-box{
+    height: 90%;
+    transform: translateX(10%);
+    width: 80%;
+    background-image: url("images/purpleGrid.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    transform:
+    rotate3d(.5,-.866,0,15deg)
+    rotate(1deg);
+    box-shadow:
+    2em 4em 6em -2em rgba(0,0,0,.5),
+    1em 2em 3.5em -2.5em rgba(0,0,0,.5);
+    transition:
+    transform .4s ease,
+    box-shadow .4s ease;
+    border-radius: .5em;
+
+    &:hover {
+    transform:
+      rotate3d(0,0,0,0deg)
+      rotate(0deg);
+  }
+
+}
+
+.square-container{
+    display: grid;
+    grid-template-columns: 12% 12% 12%;
+    grid-template-rows: 10% 10% 10%;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgb(230,226,252);
+    background: linear-gradient(175deg, rgba(230,226,252,1) 0%, rgba(251,250,255,1) 55%, rgba(253,254,254,0.7345063025210083) 100%);
+}
+
+.squares{
+    transform: translateY(300%);
+    border-radius: 5px;
+    background-color: #50d8d7;
+    background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
+    transition: transform 1s, margin 2s;
+    font-family: 'Nunito', sans-serif;
+    padding: 20%;
+    font-weight: bold;
+}
+.square-container:hover .squares{
+    transform: rotate(90deg);
+    margin: 10%;
+}
